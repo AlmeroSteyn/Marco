@@ -4889,7 +4889,6 @@ img {
   will-change: transform; }
 
 .c-navigation {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -4925,7 +4924,7 @@ a {
   color: #0E4f16; }
 
 main {
-  padding-top: 7em; }
+  padding-top: 20px; }
 
 h1 {
   font-size: 1.6em;
@@ -4951,7 +4950,7 @@ h1.larger {
 .splash {
   text-align: center;
   font-size: 3em;
-  font-style: italic;
+  margin-top: 1em;
   font-weight: bold;
   line-height: 1.0em; }
 
@@ -4965,6 +4964,18 @@ dl dt {
 
 dl dd {
   font-size: 2em; }
+
+.footer {
+  left: 0;
+  width: 100%;
+  background: #F4EBC1;
+  z-index: 10;
+  margin-left: 0px;
+  min-height: 20em; }
+
+img {
+  -webkit-box-shadow: 0 2px 2px 0 #C2C2C2;
+  box-shadow: 0 2px 2px 0 #C2C2C2; }
 
 /*
 */

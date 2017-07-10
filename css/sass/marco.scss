@@ -1,76 +1,63 @@
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-
-/*
-
-Geel = 249, 214 , 22  => #F9D616
-
-Groen =  0, 183, 96   => #00B760
-
-*/
-
-html,body{height:100%}
-
-/*** FRONTPAGE SLIDESHOW ***/
-#slides_container{height:303px; width: 399px; background-image:url(../images/bg_slides_container.png); background-repeat:no-repeat; background-position: center; float:left;}
-.pics { height: 272px; width: 364px; padding:3px; margin:13px 0px 0px 18px; overflow: hidden }
-.pics img { height: 272px; width: 364px;}
-/*** END OF FRONTPAGE SLIDESHOW ***/
-
-.imageborder
-{
-  border-color: #003366;
-  border-style: solid;
-}
+/*!
+Custom Bootstrap manifest without glyphicons
+ */
+// Core variables and mixins
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins";
+// Reset and dependencies
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_normalize";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_print";
+// Core CSS
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_code";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_tables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons";
+// Components
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_component-animations";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_button-groups";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_input-groups";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navs";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_breadcrumbs";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_pagination";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_pager";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_labels";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_badges";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_thumbnails";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_alerts";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_progress-bars";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_media";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_list-group";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_panels";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_responsive-embed";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_wells";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_close";
+// Components w/ JavaScript
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_modals";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_tooltip";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_popovers";
+// Utility classes
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_utilities";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_responsive-utilities";
 
 body
 {
   color: #00B760;
   font-size: 1em;
   line-height: 18px;
-  font-family:Tahoma, Arial, Verdana;
+  font-family:'Verdana', 'Helvetica', sans-serif;
   background-color: #FFFFFF;
   height:100%;
 }
 
-/*a*/
-/*{*/
-/*color: #00B760;*/
-/*text-decoration: none;*/
-/*}*/
-
-/*a:link*/
-/*{*/
-/*color: #00B760;*/
-/*text-decoration: none;*/
-/*}*/
-
-/*a:hover*/
-/*{*/
-/*color: #00B760;*/
-/*text-decoration: underline;*/
-/*}*/
-
-/*a:visited*/
-/*{*/
-/*color: #00B760;*/
-/*text-decoration: none;*/
-/*}*/
-
-/*a:visited:hover*/
-/*{*/
-/*color: #00B760;*/
-/*text-decoration: underline;*/
-/*}*/
-
 p {
   color: black;
   font-size: 11px;
-  font-family: Verdana }
-
-td {
-  color: #00B760;
-  font-size: 1em;
-  line-height: 18px;
   font-family: Verdana }
 
 .title {
@@ -195,7 +182,6 @@ h1 {
 h1.larger {
   font-size: 2.5em;
 }
-
 .logo {
   height: 4em;
   float: left;
@@ -219,8 +205,20 @@ h1.larger {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 3em;
   color: #222222;
+}
+
+dl {
+
+  dt{
+    font-size: 2em;
+    color: #222222;
+  }
+
+  dd{
+    font-size: 2em;
+  }
 }
 
 /*

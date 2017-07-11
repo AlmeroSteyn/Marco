@@ -4820,11 +4820,10 @@ button.close {
     display: none !important; } }
 
 body {
-  color: #00B760;
+  background-color: #F7EB9E;
   font-size: 1em;
   line-height: 18px;
   font-family: 'Verdana', 'Helvetica', sans-serif;
-  background-color: #FFFFFF;
   height: 100%; }
 
 p {
@@ -4876,10 +4875,12 @@ li a {
   padding: 16px; }
 
 li a:focus {
-  background-color: #FFFFFF; }
+  background-color: #F8DB01;
+  color: black; }
 
 li a:hover {
-  background-color: #FFFFFF; }
+  background-color: #F8DB01;
+  color: black; }
 
 img {
   max-height: 100%; }
@@ -4892,9 +4893,11 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background: #F4EBC1;
+  background: black;
   z-index: 10;
-  margin-left: 0px; }
+  margin-left: 0px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 12px 0px #888888; }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
   display: block; }
@@ -4915,8 +4918,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, sec
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
   line-height: 1;
-  font-size: 1.7em;
-  color: #222222; }
+  font-size: 2em;
+  color: #F8DB01; }
 
 a {
   text-decoration: underline;
@@ -4933,7 +4936,12 @@ h1 {
   padding-right: 0.5em; }
 
 h1.larger {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  padding-top: 5px; }
+
+.header-banner h1 {
+  color: #F8DB01;
+  font-size: 1.9em; }
 
 .logo {
   height: 4em;
@@ -4968,14 +4976,19 @@ dl dd {
 .footer {
   left: 0;
   width: 100%;
-  background: #F4EBC1;
+  background: black;
   z-index: 10;
   margin-left: 0px;
-  min-height: 20em; }
+  min-height: 20em;
+  color: #F8DB01;
+  border-radius: 16px;
+  box-shadow: 3px 3px 12px 0px #888888; }
 
-img {
-  -webkit-box-shadow: 0 2px 2px 0 #C2C2C2;
-  box-shadow: 0 2px 2px 0 #C2C2C2; }
+img:not(.logo):not(.mobile-logo) {
+  border-radius: 16px; }
+
+.well {
+  box-shadow: 3px 3px 12px 0px #888888; }
 
 /*
 */

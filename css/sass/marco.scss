@@ -137,7 +137,7 @@ img {
   background: black;
   z-index: 10;
   margin-left: 0px;
-  border-radius: 16px;
+  //border-radius: 16px;
   box-shadow: 3px 3px 12px 0px #888888;
 }
 article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
@@ -186,10 +186,7 @@ h1.larger {
   padding-top: 5px;
 }
 
-.header-banner h1 {
-  color: #F8DB01;
-  font-size: 1.9em;
-}
+
 .logo {
   height: 4em;
   float: left;
@@ -197,16 +194,11 @@ h1.larger {
   margin-top: 1.3em;
 }
 
-.center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 8em;
-}
+
 
 .splash {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   margin-top: 1em;
   //font-style: italic;
   font-weight: bold;
@@ -238,19 +230,92 @@ dl {
   margin-left: 0px;
   min-height: 20em;
   color: #F8DB01;
-  border-radius: 16px;
+  //border-radius: 16px;
   box-shadow: 3px 3px 12px 0px #888888;
 
 }
 
-img:not(.logo):not(.mobile-logo) {
-  border-radius: 16px;
-}
+//img:not(.logo):not(.mobile-logo) {
+//  border-radius: 16px;
+//}
 
 .well {
   box-shadow: 3px 3px 12px 0px #888888;
 }
 
+.container-fluid{
+  padding: 0;
+}
+
 /*
 */
+
+
+@media (max-width: 1200px) {
+  .center-image {
+    float:left;
+    padding:1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8em;
+  }
+
+  .header-banner h1 {
+    color: #F8DB01;
+    font-size: 4.0em;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .center-image {
+    float:left;
+    padding:1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8em;
+  }
+
+  .header-banner h1 {
+    color: #F8DB01;
+    font-size: 1.9em;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8em;
+  }
+
+  .header-banner h1 {
+    text-align: center;
+    color: #F8DB01;
+    font-size: 1.9em;
+  }
+}
+
+
+//@media (max-width: 767px) {
+//  .center-image {
+//    display: block;
+//    margin-left: auto;
+//    margin-right: auto;
+//    height: 8em;
+//  }
+//
+//  .header-banner h1 {
+//    color: #F8DB01;
+//    font-size: 1.9em;
+//  }
+//}
+
+
+
 

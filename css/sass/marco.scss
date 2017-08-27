@@ -97,8 +97,9 @@ p {
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: inline-block;
+  margin: 9px;
+  padding: 9px;
   overflow: hidden;
 }
 
@@ -107,9 +108,9 @@ li {
 }
 
 li a {
-  display: block;
+  //display: block;
   text-align: center;
-  padding: 16px;
+  padding-right: 16px;
 }
 
 li a:focus{
@@ -210,17 +211,7 @@ h2 {
   color: #222222;
 }
 
-dl {
 
-  dt{
-    font-size: 2em;
-    color: #222222;
-  }
-
-  dd{
-    font-size: 2em;
-  }
-}
 
 .footer{
   left: 0;
@@ -267,6 +258,15 @@ dl {
     font-style: italic;
     font-size: 0.7em;
   }
+
+  ul {
+
+    li{
+      font-size: 2em;
+      color: #222222;
+    }
+
+  }
 }
 
 @media (max-width: 1200px) {
@@ -286,6 +286,15 @@ dl {
   .header-splash {
     font-style: italic;
     font-size: 0.7em;
+  }
+
+  ul {
+
+    li{
+      font-size: 2em;
+      color: #222222;
+    }
+
   }
 }
 
@@ -310,6 +319,16 @@ dl {
     font-style: italic;
     font-size: 0.7em;
   }
+
+  ul {
+
+    li{
+      font-size: 1.5em;
+      color: #222222;
+      display: inline-block;
+    }
+
+  }
 }
 
 
@@ -333,6 +352,17 @@ dl {
   .header-splash {
     font-style: italic;
     font-size: 0.7em;
+  }
+
+  ul {
+
+    li{
+      font-size: 1.1em;
+      color: #222222;
+      display: inline-block;
+      width:100%;
+    }
+
   }
 }
 

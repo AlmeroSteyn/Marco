@@ -4862,17 +4862,17 @@ p {
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: inline-block;
+  margin: 9px;
+  padding: 9px;
   overflow: hidden; }
 
 li {
   float: left; }
 
 li a {
-  display: block;
   text-align: center;
-  padding: 16px; }
+  padding-right: 16px; }
 
 li a:focus {
   background-color: #F8DB01;
@@ -4955,13 +4955,6 @@ h2 {
   font-size: 3em;
   color: #222222; }
 
-dl dt {
-  font-size: 2em;
-  color: #222222; }
-
-dl dd {
-  font-size: 2em; }
-
 .footer {
   left: 0;
   width: 100%;
@@ -4992,7 +4985,10 @@ dl dd {
     font-size: 4.0em; }
   .header-splash {
     font-style: italic;
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+  ul li {
+    font-size: 2em;
+    color: #222222; } }
 
 @media (max-width: 1200px) {
   .center-image {
@@ -5006,7 +5002,10 @@ dl dd {
     font-size: 4.0em; }
   .header-splash {
     font-style: italic;
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+  ul li {
+    font-size: 2em;
+    color: #222222; } }
 
 @media (max-width: 992px) {
   .center-image {
@@ -5020,7 +5019,11 @@ dl dd {
     font-size: 4.0em; }
   .header-splash {
     font-style: italic;
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+  ul li {
+    font-size: 1.5em;
+    color: #222222;
+    display: inline-block; } }
 
 @media (max-width: 768px) {
   .center-image {
@@ -5036,4 +5039,9 @@ dl dd {
     font-size: 2.5em; }
   .header-splash {
     font-style: italic;
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+  ul li {
+    font-size: 1.1em;
+    color: #222222;
+    display: inline-block;
+    width: 100%; } }

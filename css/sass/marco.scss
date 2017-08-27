@@ -249,11 +249,8 @@ dl {
 
 /*
 */
-
-
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .center-image {
-    float:left;
     padding:1em;
     display: block;
     margin-left: auto;
@@ -265,13 +262,15 @@ dl {
     color: #F8DB01;
     font-size: 4.0em;
   }
+
+  .header-splash {
+    font-style: italic;
+    font-size: 0.7em;
+  }
 }
 
-
-
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .center-image {
-    float:left;
     padding:1em;
     display: block;
     margin-left: auto;
@@ -281,13 +280,43 @@ dl {
 
   .header-banner h1 {
     color: #F8DB01;
-    font-size: 1.9em;
+    font-size: 4.0em;
+  }
+
+  .header-splash {
+    font-style: italic;
+    font-size: 0.7em;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .center-image {
+    padding:1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8em;
+  }
+
+  .header-banner h1 {
+    color: #F8DB01;
+    font-size: 4.0em;
+  }
+
+
+  .header-splash {
+    font-style: italic;
+    font-size: 0.7em;
   }
 }
 
 
 @media (max-width: 768px) {
   .center-image {
+    padding:0em;
+    margin-top:1em;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -297,7 +326,13 @@ dl {
   .header-banner h1 {
     text-align: center;
     color: #F8DB01;
-    font-size: 1.9em;
+    font-size: 2.5em;
+  }
+
+
+  .header-splash {
+    font-style: italic;
+    font-size: 0.7em;
   }
 }
 

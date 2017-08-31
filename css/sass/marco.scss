@@ -54,6 +54,20 @@ body
   height:100%;
 }
 
+.spacer {
+  margin-bottom: 3em;
+}
+
+//.container {
+//  display: table;
+//}
+//
+//.col-md-6 {
+//  float: none;
+//  display: table-cell;
+//  vertical-align: top;
+//}
+
 a {
   //text-decoration: none;
   //text-shadow: 0.05em 0 0 white, -0.05em 0 0 white,
@@ -73,14 +87,17 @@ a {
   color: darkblue;
   text-decoration: underline;
   text-underline-position: under;
+  padding: 5px;
 
   &:focus{
+    color: darkblue;
     outline: 5px auto black;
     outline-offset: 15px;
     text-decoration: none;
   }
 
   &:hover {
+    color: darkblue;
     outline: 5px auto black;
     outline-offset: 15px;
     text-decoration: none;
@@ -142,8 +159,8 @@ li {
 li a {
   //display: block;
   text-align: center;
-  margin-right: 16px;
-  margin-left: 8px;
+  margin-right: 8px;
+  //margin-left: 4px;
 }
 
 //li a:focus{

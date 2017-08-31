@@ -4829,21 +4829,45 @@ body {
 .spacer {
   margin-bottom: 3em; }
 
-a {
+a:not(.skip) {
   color: darkblue;
   text-decoration: underline;
   text-underline-position: under;
   padding: 5px; }
-  a:focus {
+  a:not(.skip):focus {
     color: darkblue;
     outline: 5px auto black;
     outline-offset: 15px;
     text-decoration: none; }
-  a:hover {
+  a:not(.skip):hover {
     color: darkblue;
     outline: 5px auto black;
     outline-offset: 15px;
     text-decoration: none; }
+
+.skip {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden; }
+  .skip:focus, .skip:active {
+    font-size: 16pt;
+    text-decoration: underline;
+    text-underline-position: under;
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 999;
+    padding: 15px 30px;
+    background-color: white; }
+
+div:focus {
+  outline: 5px auto black; }
 
 p {
   color: black;

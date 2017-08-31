@@ -68,7 +68,7 @@ body
 //  vertical-align: top;
 //}
 
-a {
+a:not(.skip) {
   //text-decoration: none;
   //text-shadow: 0.05em 0 0 white, -0.05em 0 0 white,
   //0 0.05em 0 white, 0 -0.05em 0 white,
@@ -102,6 +102,33 @@ a {
     outline-offset: 15px;
     text-decoration: none;
   }
+}
+
+.skip{
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+  &:focus, &:active {
+    font-size: 16pt;
+    text-decoration: underline;
+    text-underline-position: under;
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index:999;
+    padding:15px 30px;
+    background-color: white;
+  }
+}
+
+div:focus {
+  outline: 5px auto black;
 }
 
 p {

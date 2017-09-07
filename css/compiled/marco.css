@@ -1439,12 +1439,10 @@ a:not(.skip) {
   a:not(.skip):focus {
     color: darkblue;
     outline: 5px auto black;
-    outline-offset: 15px;
     text-decoration: none; }
   a:not(.skip):hover {
     color: darkblue;
     outline: 5px auto black;
-    outline-offset: 15px;
     text-decoration: none; }
 
 .skip {
@@ -1468,7 +1466,10 @@ a:not(.skip) {
     padding: 15px 30px;
     background-color: white; }
 
-div:focus {
+section:focus {
+  outline: 5px auto black; }
+
+section:active {
   outline: 5px auto black; }
 
 p {
@@ -1554,6 +1555,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, sec
   font-size: 2em;
   color: #F8DB01; }
 
+footer span {
+  color: #F8DB01; }
+
 main {
   padding-top: 20px; }
 
@@ -1604,6 +1608,9 @@ h2 {
 
 p {
   font-size: 1.5em; }
+
+main .row.no-flex > [class*='col-'] {
+  display: block; }
 
 @media (min-width: 1200px) {
   .center-image {

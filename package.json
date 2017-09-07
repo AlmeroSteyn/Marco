@@ -4,11 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build-sass": "node-sass --include-path css/sass css/sass/marco.scss css/compiled/marco.css"
+    "build-sass": "node-sass --include-path css/sass css/sass/marco.scss css/compiled/marco.css",
+    "minify-css": "postcss css/compiled/marco.css > css/compiled/marco.min.css"
   },
   "dependencies": {
+    "autoprefixer": "^7.1.4",
     "bootstrap": "^3.3.7",
     "bootstrap-sass": "^3.3.7",
-    "node-sass": "^4.5.3"
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.0"
   }
 }

@@ -1628,13 +1628,16 @@ main .row.no-flex > [class*='col-'] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 8em; }
+    height: 12em; }
   .header-banner h1 {
+    text-align: center;
     color: #F8DB01;
     font-size: 4.0em; }
   .header-splash {
-    font-style: italic;
-    font-size: 0.7em; }
+    text-align: center;
+    color: #F8DB01;
+    font-size: 2.0em;
+    font-style: italic; }
   ul li {
     font-size: 2em;
     color: #222222;
@@ -1666,13 +1669,16 @@ main .row.no-flex > [class*='col-'] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 8em; }
+    height: 12em; }
   .header-banner h1 {
+    text-align: center;
     color: #F8DB01;
     font-size: 4.0em; }
   .header-splash {
-    font-style: italic;
-    font-size: 0.7em; }
+    text-align: center;
+    color: #F8DB01;
+    font-size: 2.0em;
+    font-style: italic; }
   ul li {
     font-size: 2em;
     color: #222222;
@@ -1705,13 +1711,16 @@ main .row.no-flex > [class*='col-'] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 8em; }
+    height: 12em; }
   .header-banner h1 {
+    text-align: center;
     color: #F8DB01;
     font-size: 4.0em; }
   .header-splash {
-    font-style: italic;
-    font-size: 0.7em; }
+    text-align: center;
+    color: #F8DB01;
+    font-size: 2.0em;
+    font-style: italic; }
   ul li {
     font-size: 2em;
     color: #222222;
@@ -1740,10 +1749,12 @@ main .row.no-flex > [class*='col-'] {
   .header-banner h1 {
     text-align: center;
     color: #F8DB01;
-    font-size: 2.5em; }
+    font-size: 4.0em; }
   .header-splash {
-    font-style: italic;
-    font-size: 0.7em; }
+    text-align: center;
+    color: #F8DB01;
+    font-size: 2.0em;
+    font-style: italic; }
   ul li {
     font-size: 2em;
     color: #222222;

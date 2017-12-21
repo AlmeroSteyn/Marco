@@ -1435,16 +1435,33 @@ body {
   margin-top: 10px;
   margin-bottom: 20px; }
 
-a:not(.skip) {
+.header-link-container {
+  margin-top: 15px; }
+
+.header-link {
+  font-size: 1.4em;
+  color: #F8DB01;
+  text-decoration: underline;
+  text-underline-position: under; }
+  .header-link:focus {
+    color: #F8DB01;
+    outline: 3px auto #F8DB01;
+    text-decoration: none; }
+  .header-link:hover {
+    color: #F8DB01;
+    outline: 3px auto #F8DB01;
+    text-decoration: none; }
+
+a:not(.skip):not(.header-link) {
   color: darkblue;
   text-decoration: underline;
   text-underline-position: under;
   padding: 5px; }
-  a:not(.skip):focus {
+  a:not(.skip):not(.header-link):focus {
     color: darkblue;
     outline: 5px auto black;
     text-decoration: none; }
-  a:not(.skip):hover {
+  a:not(.skip):not(.header-link):hover {
     color: darkblue;
     outline: 5px auto black;
     text-decoration: none; }
@@ -1753,7 +1770,7 @@ main .row.no-flex > [class*='col-'] {
   .header-splash {
     text-align: center;
     color: #F8DB01;
-    font-size: 2.0em;
+    font-size: 1.6em;
     font-style: italic; }
   ul li {
     font-size: 2em;

@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build-sass": "node-sass --include-path css/sass css/sass/marco.scss css/compiled/marco.css",
-    "minify-css": "postcss css/compiled/marco.css > css/compiled/marco.min.css"
+    "build-sass": "node-sass --include-path css/sass css/sass/marco.scss css/marco.css",
+    "minify-css": "postcss css/marco.css > css/marco.min.css"
   },
   "dependencies": {
     "autoprefixer": "^7.1.4",
